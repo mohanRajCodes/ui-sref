@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>ui-sref</title>
+    
+</head>
+<body>
+<ul>
+    <li><a ui-sref="root()">Home</a></li>
+    <li><a ui-sref="Firstlink()">First Message</a></li>
+    <li><a ui-sref="paralink({a:12,b:23})"> Parameter Message</a></li>
+    <li><a ui-sref="noparamslink({a:12,b:null})"> Parameter-Message-with-default-Parameter</a></li>
+    <li><a ui-sref="paramsObject()"> UI-Router-With-Params-Object</a></li>
+    <li><a ui-sref="paramsObject({b:12})"> UI-Router-With-Params-Object-with-Array-values</a></li>
+    <li><a ui-sref="queryString()">UI-Router-With-Query-String-with-no-params</a></li>
+    <li><a ui-sref="queryString({a:12})">UI-Router-With-Query-String-with-no-params</a></li>
+    <li><a ui-sref="addCal({a:null,b:null})">Add</a></li>
+    
+</ul>
+
+<div ui-view></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.23/angular-ui-router.js"></script>
+    <script src="/Client/app.js"></script>
+    
+</body>
+</html>
